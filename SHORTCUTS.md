@@ -12,6 +12,10 @@
 | `$`      | Go to end of line                |
 | `^`      | Go to beginning of line          |
 | `w`      | Go to next word                  |
+| `y`      | Copy selection |
+| `yy`     | Copy line |
+| `p`      | Paste from default register |
+| `"+p`    | Paste from system clipboard |
 | `d`      | Delete selection                 |
 | `dd`     | Delete line                      |
 | `dw`     | Delete word                      |
@@ -39,3 +43,8 @@
 
 ### Comment / uncomment code block
 https://stackoverflow.com/a/1676690
+
+### Copy-paste 
+Either use `:set paste` then ctlr v 
+Either use `"+p` (copy from system clipboard)
+To copy from vim register, do `p`
