@@ -38,8 +38,8 @@
 | `ctrl f` | Move forward one full screen      |
 | `ctrl d` | Move forward 1/2 screen      |
 | `ctrl u` | Move back (up) 1/2 screen      |
-| `ctrl alt n` | Toggle NerdTree |
-| `ctrl alt u` | Toggle Gundo |
+| `,nt` | Toggle NerdTree |
+| `,gu` | Toggle Gundo |
 |`v` | Visual mode |
 |`V` | Line selection |
 | `ctrl v` | Region selection (for vertical column selection) |
