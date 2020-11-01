@@ -1,6 +1,5 @@
 " vim: set foldmarker={{,}} foldlevel=0 foldmethod=marker spell:
 
-
 "Environment {{
     "Basics {{
         set nocompatible
@@ -20,6 +19,8 @@
 
     ""Theming
     Plug 'morhetz/gruvbox'
+    Plug 'gosukiwi/vim-atom-dark'
+    Plug 'dracula/vim', {'as':'dracula'}
 
 
     ""General
@@ -58,6 +59,7 @@
     Plug 'thinca/vim-textobj-function-javascript'
     Plug 'vim-scripts/argtextobj.vim'
     Plug 'bps/vim-textobj-python'
+    Plug 'rbonvall/vim-textobj-latex'
     "Expanding selection by pressing + (or _ to shrink)
     Plug 'terryma/vim-expand-region'
 
@@ -87,7 +89,8 @@
     " Color scheme
     "set background=dark
     "set background=light
-    colorscheme gruvbox 
+    "colorscheme gruvbox 
+    colorscheme atom-dark 
 
     if !has('gui_running')
         let g:solarized_termcolors=256
@@ -138,11 +141,16 @@
 
     "Remap <tab> in command mode to switch between window    
     map <Tab> <C-W>W
-
-
-    " Some tips worth having
-    "Insert new line in NORMAL mode by pressing Enter
-    nmap <CR> o<Esc>
+    
+	" Commenting blocks of code.
+    autocmd FileType c,cpp,java,scala,javascript let b:comment_leader = '// '
+    autocmd FileType sh,ruby,python      let b:comment_leader = '# '
+    autocmd FileType conf,fstab          let b:comment_leader = '# '
+    autocmd FileType tex                 let b:comment_leader = '% '
+    autocmd FileType mail                let b:comment_leader = '> '
+    autocmd FileType vim                 let b:comment_leader = '" '
+    noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+    noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 " }}
 
 " Plugins options {{
@@ -164,8 +172,11 @@
         " Have coc-status in statusline
         set statusline^=%{coc#status()}
     " }}
-    
     " NerdTree {{
-        nmap <C-n> :NERDTreeToggle<CR>
+        nmap ,nt :NERDTreeToggle<CR>
+    " }}
+    " gundo {{
+        let g:gundo_prefer_python3 = 1
+        nmap ,gu :GundoToggle<CR>
     " }}
 " }}
