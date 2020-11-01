@@ -34,3 +34,8 @@
 | `ctrl f` | Move forward one full screen      |
 | `ctrl d` | Move forward 1/2 screen      |
 | `ctrl u` | Move back (up) 1/2 screen      |
+
+## HowTo
+
+### Comment / uncomment code block
+https://stackoverflow.com/a/1676690
