@@ -12,11 +12,15 @@
 | `$`      | Go to end of line                |
 | `^`      | Go to beginning of line          |
 | `w`      | Go to next word                  |
+| `y`      | Copy selection |
+| `yy`     | Copy line |
+| `p`      | Paste from default register |
+| `"+p`    | Paste from system clipboard |
 | `d`      | Delete selection                 |
 | `dd`     | Delete line                      |
 | `dw`     | Delete word                      |
 | `d2w`    | Delete two words                 |
-| `u`      | Undoe                            |
+| `u`      | Undo                            |
 | `:w`     | Write                            |
 | `:q`     | Quit                             |
 | `:wq`    | Write and Quit                   |
@@ -30,10 +34,22 @@
 | `,cu`    | Uncomment                        |
 | `,cc`    | Comment selection                |
 | `gq`     | Reformat line (wrap )            |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
+| `ctrl b` | Move back one full screen     |
+| `ctrl f` | Move forward one full screen      |
+| `ctrl d` | Move forward 1/2 screen      |
+| `ctrl u` | Move back (up) 1/2 screen      |
+| `,nt` | Toggle NerdTree |
+| `,gu` | Toggle Gundo |
+|`v` | Visual mode |
+|`V` | Line selection |
+| `ctrl v` | Region selection (for vertical column selection) |
+
+## HowTo
+
+### Comment / uncomment code block
+https://stackoverflow.com/a/1676690
+
+### Copy-paste 
+Either use `:set paste` then ctlr v 
+Either use `"+p` (copy from system clipboard)
+To copy from vim register, do `p`
