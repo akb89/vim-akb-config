@@ -31,9 +31,7 @@
 | `,cc`    | Comment selection                |
 | `gq`     | Reformat line (wrap )            |
 | `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
-| `+`      | Select selection on cursor      |
+| `ctrl b` | Move back one full screen     |
+| `ctrl f` | Move forward one full screen      |
+| `ctrl d` | Move forward 1/2 screen      |
+| `ctrl u` | Move back (up) 1/2 screen      |
