@@ -20,7 +20,7 @@
 | `dd`     | Delete line                      |
 | `dw`     | Delete word                      |
 | `d2w`    | Delete two words                 |
-| `u`      | Undoe                            |
+| `u`      | Undo                            |
 | `:w`     | Write                            |
 | `:q`     | Quit                             |
 | `:wq`    | Write and Quit                   |
@@ -38,6 +38,11 @@
 | `ctrl f` | Move forward one full screen      |
 | `ctrl d` | Move forward 1/2 screen      |
 | `ctrl u` | Move back (up) 1/2 screen      |
+| `ctrl alt n` | Toggle NerdTree |
+| `ctrl alt u` | Toggle Gundo |
+|`v` | Visual mode |
+|`V` | Line selection |
+| `ctrl v` | Region selection (for vertical column selection) |
 
 ## HowTo
 
