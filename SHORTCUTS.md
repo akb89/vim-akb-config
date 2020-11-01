@@ -3,7 +3,7 @@
 | Shortcut | Description                      |
 |:--------:| -------------------------------- | 
 | `,,w`    | Select by target key             |
-| `+`      | Select selection on cursor       |
+| `+`      | Select selection on cursor (will use smart selection if textobj is available for filetype / code. Coming from vim-expand-region |
 | `,tt`    | Vizualise code structure         |
 | `,f`     | List all files in directory      |
 | `gg`     | Go to beginning of file          |
@@ -40,9 +40,16 @@
 | `ctrl u` | Move back (up) 1/2 screen      |
 | `,nt` | Toggle NerdTree |
 | `,gu` | Toggle Gundo |
-|`v` | Visual mode |
-|`V` | Line selection |
+| `v` | Visual mode |
+| `V` | Line selection |
+| `V G` | select line from selector till end of file |
 | `ctrl v` | Region selection (for vertical column selection) |
+| `split` | Open file after horizontal split |
+| `vsplit` | Open file after vertical split |
+| `:CtrlP` | Open file with strong pattern matching |
+| `K` | Print corresponding documentation on function |
+| `:Tabularize/&` | Tabularize along & |
+| `:%s/\ve/i/g` | Search and replace (s/) on whole file (%) using perl regex: all e become i. Apply to all occurences across lines (g) not just the first one |
 
 ## HowTo
 
