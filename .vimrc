@@ -120,6 +120,9 @@
     set softtabstop=4               " let backspace delete indent
     set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
     set backspace=indent,eol,start  " use backspace like other apps"
+    
+    " Apply linebreak (wrap on words) in tex files
+    autocmd FileType tex,txt set linebreak
 
     " Remove trailing whitespaces and ^M chars
     "autocmd FileType c,cpp,java,php,javascript,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
