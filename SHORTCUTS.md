@@ -12,6 +12,7 @@
 | `$`      | Go to end of line                |
 | `^`      | Go to beginning of line          |
 | `w`      | Go to next word                  |
+| `b`      | Go to previous word                  |
 | `y`      | Copy selection |
 | `yy`     | Copy line |
 | `p`      | Paste from default register |
