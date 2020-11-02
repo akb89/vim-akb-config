@@ -21,7 +21,7 @@
     Plug 'morhetz/gruvbox'
     Plug 'gosukiwi/vim-atom-dark'
     Plug 'dracula/vim', {'as':'dracula'}
-
+    Plug 'sonph/onehalf', {'rtp': 'vim'}
 
     ""General
     Plug 'scrooloose/nerdTree'
@@ -90,7 +90,7 @@
     "set background=dark
     "set background=light
     "colorscheme gruvbox 
-    colorscheme atom-dark 
+    colorscheme dracula 
 
     if !has('gui_running')
         let g:solarized_termcolors=256
@@ -171,6 +171,16 @@
 
         " Have coc-status in statusline
         set statusline^=%{coc#status()}
+        " Use K to show documentation in preview window.
+        nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+        function! s:show_documentation()
+            if (index(['vim','help'], &filetype) >= 0)
+                execute 'h '.expand('<cword>')
+            else
+                call CocAction('doHover')
+            endif
+        endfunction
     " }}
     " NerdTree {{
         nmap ,nt :NERDTreeToggle<CR>
