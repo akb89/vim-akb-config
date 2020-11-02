@@ -50,6 +50,8 @@
 | `K` | Print corresponding documentation on function |
 | `:Tabularize/&` | Tabularize along & |
 | `:%s/\ve/i/g` | Search and replace (s/) on whole file (%) using perl regex: all e become i. Apply to all occurences across lines (g) not just the first one |
+| `:noh` | remove highlight |
+| `,,w` | (leader leader w) easily nagivate through file |
 
 ## HowTo
 
