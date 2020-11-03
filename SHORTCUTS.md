@@ -16,6 +16,7 @@
 | `y`      | Copy selection |
 | `yy`     | Copy line |
 | `p`      | Paste from default register |
+| `"+x`    | Copy to system clipboard |
 | `"+p`    | Paste from system clipboard |
 | `d`      | Delete selection                 |
 | `dd`     | Delete line                      |
