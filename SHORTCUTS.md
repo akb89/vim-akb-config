@@ -23,6 +23,7 @@
 | `dw`     | Delete word                      |
 | `d2w`    | Delete two words                 |
 | `u`      | Undo                            |
+| `ctrl r`      | Redo                            |
 | `:w`     | Write                            |
 | `:q`     | Quit                             |
 | `:wq`    | Write and Quit                   |
@@ -54,6 +55,7 @@
 | `:%s/\ve/i/g` | Search and replace (s/) on whole file (%) using perl regex: all e become i. Apply to all occurences across lines (g) not just the first one |
 | `:noh` | remove highlight |
 | `,,w` | (leader leader w) easily nagivate through file |
+| `:set spell spelllang=en_us` | set spellcheck |
 
 ## HowTo
 
